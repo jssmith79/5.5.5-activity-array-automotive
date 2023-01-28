@@ -11,6 +11,17 @@ class Vehicle {
         this.numberOfWheels = 0;
     }
 
+class SedanDetails extends Vehicle{
+    constructor(name, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService){
+        this.name = name;
+        this.maximumPassengers = maximumPassengers;
+        this.passenger = passenger;
+        this.numberOfWheels = numberOfWheels;
+        this.maximumSpeed = maximumSpeed;
+        this.fuel = fuel;
+        this.scheduleService = scheduleService;
+    }
+}
     start() {
         if (this.fuel > 0) {
             return this.started = true;
