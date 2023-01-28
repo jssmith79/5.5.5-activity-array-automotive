@@ -11,7 +11,7 @@ class Vehicle {
         this.numberOfWheels = 0;
     }
 
-//extending Vehicle class properties for step 6
+//extending Vehicle class properties for step 6.  It does not like the class name I made Sedan Details? I'm missing something.
 class SedanDetails extends Vehicle{
     constructor(name, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService){
         this.name = name;
@@ -42,6 +42,8 @@ class SedanDetails extends Vehicle{
             console.log("engine cannot start...");
         }
     }
+
+//it does not like the name I gave the schedule service method I gave as well.  
     scheduleService(mileage){
         if (mileage === 30000){
             return this.maintenance = true;
