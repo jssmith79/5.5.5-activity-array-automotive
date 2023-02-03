@@ -5,11 +5,11 @@ const VehicleModule = require("./vehicleBaseClass")
 let v = new VehicleModule.Vehicle("Mecury", "Sedan", "1965", "color", "mileage");
 console.log(v.make)
 
-class SedanDetails extends Vehicle{
+class SedanDetails extends Vehicle{ //It should extend VehicleModule as that is how the class is being imported 
     constructor(name, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService){
-        super(name, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService);
+        super(name, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService); //The parent class constructor does not take all these parameters
         this.name = name;
-        this.maximumPassengers = maximumPassengers;
+        this.maximumPassengers = maximumPassengers; 
         this.passenger = passenger;
         this.numberOfWheels = numberOfWheels;
         this.maximumSpeed = maximumSpeed;
